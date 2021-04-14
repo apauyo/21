@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		
 		if(elInput.value > 0) { //Nombre de joueurs doit être un nombre positif
 		
-			//Création ou changement de la valeur de numGames (nombre de parties) dans le sessionStorage
-			window.sessionStorage.numGames ? window.sessionStorage.numGames = ++numGames : window.sessionStorage.numGames = numGames;
+			//Création ou changement de la valeur de numGames (nombre de parties) dans le localstorage
+			window.localStorage.numGames ? window.localStorage.numGames = ++numGames : window.localStorage.numGames = numGames;
 			
 			elForm.hidden = true;
 			
